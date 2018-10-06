@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>osql runner</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="jquery.resizableColumns.css">
+	<script type="text/javascript" src="jquery.resizableColumns.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<header class="border mx-0 text-primary">
+		<h1>OSQL Runner</h1>
+	</header>
+	
+	<article class="border　container">
+		<div class="row mx-0" id="view-container">
+			<div class="col-8 border px-0" id="main-view">
+				<div class="border" id="editor-view">
+				<textarea id="editor-textarea" placeholder="ここにSQLを入力してください"></textarea>
+				<button type="button" type="button" class="btn btn-primary" id="editor-button-execute">実行(Crtl+Return)</button>
+				</div>
+				<div class="border" id="result-view">
+					<h2>Result View</h2>
+				</div>
+			</div>
+			
+			<div class="col-4 border" id="object-view">
+				<h2>Object View</h2>
+			</div>
+		</div>
+	</article>
+	
+	<footer class="border text-center">
+		<small>Copy right &copy; Kentaro Haneda 2018 All Rights Reserved. </small>
+	</footer>
+</body>
+</html>
